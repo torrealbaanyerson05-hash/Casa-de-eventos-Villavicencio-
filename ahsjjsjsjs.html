@@ -1,173 +1,249 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAYMA Casa de Eventos | Elegancia y Profesionalismo</title>  <!-- SEO METAETIQUETAS -->  <meta name="description" content="FAYMA Casa de Eventos en Villavicencio. Decoración, catering, fotografía y sonido profesional para bodas, quinceaños, cumpleaños y baby shower.">
-  <meta name="keywords" content="decoración de eventos en Villavicencio, casa de eventos Villavicencio, bodas Villavicencio, quinceaños Villavicencio, catering Villavicencio">
-  <meta name="author" content="FAYMA Casa de Eventos">  <!-- Open Graph para redes sociales -->  <meta property="og:title" content="FAYMA Casa de Eventos | Villavicencio">
-  <meta property="og:description" content="Decoración elegante, catering, fotografía y sonido profesional para tus celebraciones en Villavicencio.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tusuario.github.io/">  <!-- Ubicación local SEO -->  <meta name="geo.region" content="CO-MET">
-  <meta name="geo.placename" content="Villavicencio">
-  <meta name="geo.position" content="4.142; -73.626">
-  <meta name="ICBM" content="4.142, -73.626">  <style>
-    * { box-sizing: border-box; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAYMA Casa de Eventos</title>
 
-    body {
-      margin: 0;
-      font-family: 'Playfair Display', Georgia, serif;
-      background: linear-gradient(180deg, #fff0f6, #ffffff);
-      color: #7a1f4b;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-    header {
-      background: linear-gradient(135deg, #ffc0cb, #ff9ac2);
-      padding: 80px 20px 70px;
-      color: white;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    h1 { margin: 0; font-size: 2.9em; letter-spacing: 1px; }
+body{
+font-family:'Poppins',sans-serif;
+background:#fde6ef;
+color:#3a2d2f;
+}
 
-    header p { margin-top: 14px; font-size: 1.15em; opacity: 0.95; }
+header{
+text-align:center;
+padding:90px 20px 60px 20px;
+background:#ffffff;
+}
 
-    .contenedor { max-width: 950px; margin: auto; padding: 20px; }
+header h1{
+font-family:'Playfair Display',serif;
+font-size:3rem;
+color:#d4af37;
+letter-spacing:2px;
+}
 
-    section {
-      padding: 40px 28px;
-      margin: 28px 15px;
-      background: white;
-      border-radius: 22px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    }
+.instagram-btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 32px;
+background:linear-gradient(45deg,#d4af37,#f5d77a);
+color:#ffffff;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:0.4s;
+}
 
-    h2 { color: #d63384; margin-bottom: 15px; font-size: 1.9em; }
+.instagram-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px rgba(212,175,55,0.5);
+}
 
-    .servicios { line-height: 2; font-size: 1.1em; }
+section{
+padding:70px 10%;
+}
 
-    .botones { margin-top: 28px; }
+.section-title{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:2.2rem;
+margin-bottom:50px;
+color:#d4af37;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 16px 28px;
-      background: linear-gradient(135deg, #ff69b4, #d63384);
-      color: white;
-      text-decoration: none;
-      border-radius: 40px;
-      font-weight: bold;
-      font-size: 0.95em;
-      letter-spacing: 0.5px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 8px 18px rgba(214, 51, 132, 0.35);
-    }
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 26px rgba(214, 51, 132, 0.45);
-    }
+.service-card{
+background:#ffffff;
+padding:35px;
+border-radius:18px;
+text-align:center;
+border:1px solid #f7c6d9;
+transition:0.4s;
+}
 
-    footer {
-      background: #ffc0cb;
-      padding: 22px;
-      font-size: 0.85em;
-      color: white;
-      margin-top: 50px;
-    }
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(212,175,55,0.2);
+}
 
-    /* BOTONES FLOTANTES */
-    .flotante {
-      position: fixed;
-      right: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      z-index: 999;
-    }
+.service-card h3{
+margin-bottom:15px;
+color:#d4af37;
+}
 
-    .flotante a {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 22px;
-      text-decoration: none;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-      transition: transform 0.2s ease;
-    }
+.form-container{
+max-width:650px;
+margin:auto;
+background:#ffffff;
+padding:50px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,0.05);
+border:1px solid #f7c6d9;
+}
 
-    .flotante a:hover { transform: scale(1.08); }
+.form-container input,
+.form-container textarea{
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:1px solid #f7c6d9;
+border-radius:12px;
+background:#fff;
+color:#3a2d2f;
+}
 
-    .wa1 { background: #25D366; bottom: 160px; }
-    .wa2 { background: #20c45a; bottom: 95px; }
-    .ig  { background: #E1306C; bottom: 30px; }
+.form-container button{
+width:100%;
+padding:16px;
+background:linear-gradient(45deg,#d4af37,#f5d77a);
+border:none;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+color:#ffffff;
+transition:0.4s;
+}
 
-    @media (max-width: 600px) {
-      h1 { font-size: 2.3em; }
-      section { margin: 22px 10px; }
-    }
-  </style></head><body>  <header>
-    <h1>FAYMA CASA DE EVENTOS</h1>
-    <p>Decoración, ambientación y experiencias inolvidables con elegancia profesional</p>
-  </header>  <div class="contenedor"><section>
-  <h2>Nuestros Servicios</h2>
-  <p class="servicios">
-    • Decoración y ambientación de espacios exclusivos<br>
-    • Servicio de catering y chef profesional<br>
-    • Fotografía artística profesional<br>
-    • Sonido de alta calidad para eventos
-  </p>
+.form-container button:hover{
+box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.whatsapp-buttons{
+text-align:center;
+margin-top:35px;
+}
+
+.whatsapp-buttons a{
+display:inline-block;
+margin:10px;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+background:#25D366;
+color:#ffffff;
+transition:0.3s;
+}
+
+.whatsapp-buttons a:hover{
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:35px;
+background:#ffffff;
+font-size:0.9rem;
+color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>FAYMA Casa de Eventos</h1>
+<a href="https://www.instagram.com/FAYMA_casa_eventos_/" target="_blank" class="instagram-btn">
+Visítanos en Instagram
+</a>
+</header>
+
+<section>
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<div class="services">
+
+<div class="service-card">
+<h3>Decoración de Bodas</h3>
+<p>Diseños románticos y elegantes para un día inolvidable.</p>
+</div>
+
+<div class="service-card">
+<h3>Quinceaños & Cumpleaños</h3>
+<p>Celebraciones llenas de glamour y estilo.</p>
+</div>
+
+<div class="service-card">
+<h3>Fotografía Profesional</h3>
+<p>Capturamos emociones con calidad premium.</p>
+</div>
+
+<div class="service-card">
+<h3>Servicio de Catering</h3>
+<p>Experiencias gastronómicas memorables.</p>
+</div>
+
+<div class="service-card">
+<h3>Sonido Profesional</h3>
+<p>Audio impecable para eventos extraordinarios.</p>
+</div>
+
+<div class="service-card">
+<h3>Producción de Eventos</h3>
+<p>Organización integral con ejecución perfecta.</p>
+</div>
+
+</div>
 </section>
 
 <section>
-  <h2>Especialistas en Momentos Únicos</h2>
-  <p class="servicios">
-    Bodas elegantes · Quinceaños soñados · Cumpleaños especiales · Baby Shower inolvidables
-  </p>
+<h2 class="section-title">Reserva tu Cita</h2>
+
+<div class="form-container">
+<form onsubmit="enviarWhatsApp(event)">
+<input type="text" id="nombre" placeholder="Nombre completo" required>
+<input type="tel" id="telefono" placeholder="Teléfono" required>
+<input type="text" id="evento" placeholder="Tipo de evento" required>
+<textarea id="mensaje" rows="4" placeholder="Cuéntanos sobre tu evento"></textarea>
+<button type="submit">Solicitar Cita</button>
+</form>
+
+<div class="whatsapp-buttons">
+<a href="https://wa.me/573115377912" target="_blank">WhatsApp </a>
+<a href="https://wa.me/573143355792" target="_blank">WhatsApp </a>
+</div>
+
+</div>
 </section>
 
-<section>
-  <h2>Experiencias Inolvidables</h2>
-  <p class="servicios">
-    Nos encargamos de cada detalle para que tu celebración sea única, elegante e inolvidable.<br><br>
-    Diseñamos ambientes innovadores, cuidamos la decoración, coordinamos el servicio y creamos
-    momentos especiales que quedarán para siempre en la memoria de tus invitados.<br><br>
-    En FAYMA Casa de Eventos transformamos tus sueños en experiencias reales llenas de
-    emoción, belleza y profesionalismo.
-  </p>
-</section>
+<footer>
+© 2026 FAYMA Casa de Eventos – experiencias inolvidables
+</footer>
 
-<section>
-  <h2>Reserva tu Fecha</h2>
-  <div class="botones">
-    <a class="btn" href="https://wa.me/573143355792" target="_blank">WhatsApp 314 335 5792</a>
-    <a class="btn" href="https://wa.me/573115377912" target="_blank">WhatsApp 311 537 7912</a>
-    <a class="btn" href="https://instagram.com/FAYMA_CASA_EVENTOS_" target="_blank">Instagram @FAYMA_CASA_EVENTOS_</a>
-  </div>
-</section>
+<script>
+function enviarWhatsApp(event){
+event.preventDefault();
 
-<section>
-  <h2>Reels de Nuestros Eventos</h2>
-  <p class="servicios">Mira algunos momentos  de nuestras decoraciones y celebraciones en Instagram.</p>
+var nombre=document.getElementById("nombre").value;
+var telefono=document.getElementById("telefono").value;
+var evento=document.getElementById("evento").value;
+var mensaje=document.getElementById("mensaje").value;
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:20px;">
-    <iframe src="https://www.instagram.com/reel/C0z8sUTp9of/?igsh=MXR0azV2NTdoM3Ryeg==" width="100%" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-    <iframe src="https://www.instagram.com/reel/DOCwgxODbVR/?igsh=a3l6dmZnenQ5M2Ni" width="100%" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-  </div>
+var texto="Hola FAYMA, quiero solicitar una cita:%0A%0A"
++"Nombre: "+nombre+"%0A"
++"Teléfono: "+telefono+"%0A"
++"Evento: "+evento+"%0A"
++"Detalles: "+mensaje;
 
-  <div class="botones" style="margin-top:25px;">
-    <a class="btn" href="https://instagram.com/FAYMA_CASA_EVENTOS_" target="_blank">Siguenos en Instagram</a>
-  </div>
-</section>
+window.open("https://wa.me/573115377912?text="+texto,"_blank");
+}
+</script>
 
-  </div>  <footer>
-    © 2026 FAYMA Casa de Eventos · Diseño elegante para celebraciones inolvidables
-  </footer>  <!-- BOTONES FLOTANTES -->  <div class="flotante">
-    <a class="wa1" href="https://wa.me/573143355792" target="_blank">W</a>
-    <a class="wa2" href="https://wa.me/573115377912" target="_blank">W</a>
-    <a class="ig" href="https://instagram.com/FAYMA_CASA_EVENTOS_" target="_blank">I</a>
-  </div></body>
+</body>
 </html>
